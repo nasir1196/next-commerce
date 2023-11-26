@@ -1,7 +1,19 @@
+import Container from "../components/Container";
+import HomeBanner from "../components/HomeBanner/HomeBanner";
+import ProductContainer from "../components/productsFetcher/ProductContainer";
+
+
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            next ecommerce
-        </main>
+        <div className="p-8">
+            <Container>
+                <div>
+                    <HomeBanner />
+                </div>
+                <div >
+                    <ProductContainer />
+                </div>
+            </Container>
+        </div>
     )
 }
