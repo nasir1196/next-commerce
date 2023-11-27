@@ -91,7 +91,7 @@ const Footer = () => {
                             }}
 
                         >Customer Service</motion.h3>
-                        <Link href="#">
+                        <Link href="/contact">
                             <motion.div
                                 initial={{ scale: 0.950 }}
                                 transition={{ duration: 0.4 }}
@@ -156,14 +156,6 @@ const Footer = () => {
                                     At our electronics store, we are dedicated to providing the latest and greatest devices and accessories to our customers. With a wide selection of phones, TVs, laptops, watches, and accessories.
                                 </motion.p>
                             </motion.div>
-                            <motion.footer>
-                                <motion.p
-                                    className="cursor-pointer"
-                                    initial={{ scale: 0.950 }}
-                                    transition={{ duration: 0.4 }}
-                                    whileHover={{ scale: 1.2, color: "#02949b" }}
-                                >&copy; {new Date().getFullYear()} - {new Date().getMonth() + 1} - {new Date().getDate()}  Next-Commerce All rights reserved.</motion.p>
-                            </motion.footer>
                         </motion.div>
                     </FooterList>
 
@@ -186,25 +178,98 @@ const Footer = () => {
 
                         >Follow Us</motion.h3>
                         <motion.div className="flex gap-2">
-                            <Link href="#">
-                                <MdFacebook size={24} />
+                            <Link href="https://www.facebook.com/NT1196" target="_blank">
+                                <motion.div className="cursor-pointer md:py-5 py-0 text-center"
+                                    initial={{ x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "red" }}>
+                                    <MdFacebook size={24} />
+                                </motion.div>
                             </Link>
-                            <Link href="#">
-                                <AiFillTwitterCircle size={24} />
+
+                            <Link href="https://www.twitter.com/nasir1196" target="_blank">
+                                <motion.div className="cursor-pointer md:py-5 py-0 text-center"
+                                    initial={{ x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "red" }}>
+                                    <AiFillTwitterCircle size={24} />
+                                </motion.div>
                             </Link>
-                            <Link href="#">
-                                <AiFillLinkedin size={24} />
+
+                            <Link href="https://www.linkedin.com/in/nasir1196" target="_blank">
+                                <motion.div className="cursor-pointer md:py-5 py-0 text-center"
+                                    initial={{ x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "red" }}>
+                                    <AiFillLinkedin size={24} />
+                                </motion.div>
                             </Link>
-                            <Link href="#">
-                                <AiFillGithub size={24} />
+
+                            <Link href="https://github.com/nasir1196" target="_blank">
+                                <motion.div className="cursor-pointer md:py-5 py-0 text-center"
+                                    initial={{ x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "red" }}>
+                                    <AiFillGithub size={24} />
+                                </motion.div>
                             </Link>
+
+                            <Link href="https://www.youtube.com/channel/UCmd6uAf2brkxxe16TA9gZzA" target="_blank">
+                                <motion.div className="cursor-pointer md:py-5 py-0 text-center"
+                                    initial={{ x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "red" }}>
+                                    <AiFillYoutube size={24} />
+                                </motion.div>
+                            </Link>
+                        </motion.div>
+
+                        <motion.div className="flex md:flex-row sm:flex-col md:gap-3 gap-0 my-4">
+                            <Link href="/about">
+                                <motion.div
+                                    initial={{ scale: 0.950 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "#02949b" }}
+                                > About Us</motion.div>
+                            </Link>
+                            <Link href="/contact">
+                                <motion.div
+                                    initial={{ scale: 0.950 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "#02949b" }}
+                                > Contact Us</motion.div>
+                            </Link>
+                        </motion.div>
+
+                        <motion.div className="flex md:flex-row sm:flex-col md:gap-3 gap-0 my-2">
                             <Link href="#">
-                                <AiFillYoutube size={24} />
+                                <motion.div
+                                    initial={{ scale: 0.950 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "#02949b" }}
+                                > Disclaimer</motion.div>
+                            </Link>
+
+                            <Link href="#">
+                                <motion.div
+                                    initial={{ scale: 0.950 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.2, color: "#02949b" }}
+                                >Privacy Policy</motion.div>
                             </Link>
                         </motion.div>
                     </FooterList>
                 </motion.div>
             </Container>
+
+            <motion.footer>
+                <motion.p
+                    className="cursor-pointer md:py-5 py-0 text-center"
+                    initial={{ x: 0 }}
+                    transition={{ duration: 0.4 }}
+                    whileHover={{ color: "#02949b" }}
+                >&copy; {new Date().getFullYear()} - {new Date().getMonth() + 1} - {new Date().getDate()}  Next-Commerce All rights reserved.</motion.p>
+            </motion.footer>
         </motion.footer>
     );
 }
