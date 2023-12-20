@@ -14,7 +14,7 @@ const HomeBanner = () => {
                     <motion.p className="text-2xl md:text-5xl text-yellow-400 font-bold">GET 50% OFF</motion.p>
                 </motion.div>
                 <motion.div initial={{ x: 0 }} transition={{ duration: 0.6 }} whileHover={{ scale: 1.3 }} className="w-1/3 relative aspect-video">
-                    <Image src={bannerImage} alt="Banner Image" fill className="object-contain" />
+                    <Image src={bannerImage} alt="Banner Image" fill={true} className="w-full h-full object-contain" />
                 </motion.div>
             </motion.div>
         </motion.div>
